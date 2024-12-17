@@ -1,5 +1,5 @@
-function Home() {
-    return <h1>Home Page</h1>;
+function Projects() {
+    return <h1 className="text-2xl font-bold">Projects Page</h1>;
   }
   
-  export default Home;
+  export default Projects;

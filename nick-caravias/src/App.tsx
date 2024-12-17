@@ -3,28 +3,28 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import './App.css';
+import './index.css';
 
 function App() {
   return (
     <Router>
-      <nav className="navbar">
-        <ul>
+      <nav className="sticky top-0 w-full bg-green-700 p-5 shadow-lg flex justify-center">
+        <ul className="flex space-x-4">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">About</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Projects</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Contact</Link>
           </li>
         </ul>
       </nav>
-      <div className="content">
+      <div className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
