@@ -1,38 +1,76 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
+import { useEffect, useState } from 'react';
 import About from './pages/About';
-import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import './index.css';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll('section').forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <Router>
-      <nav className="sticky top-0 w-full bg-green-700 p-5 shadow-lg">
-        <ul className="flex justify-center space-x-8">
-          <li>
-            <Link to="/" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Home</Link>
-          </li>
-          <li>
-            <Link to="/about" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">About</Link>
-          </li>
-          <li>
-            <Link to="/projects" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Contact</Link>
-          </li>
-        </ul>
+    <div className="min-h-screen bg-white">
+      <section id="home" className="min-h-screen">
+        <Home />
+      </section>
+  
+      <nav className="sticky top-4 mx-auto w-[600px] 
+                      bg-gradient-to-r from-green-400 to-emerald-500 
+                      rounded-full shadow-lg z-50">
+        <div className="px-4">
+          <div className="flex justify-center items-center h-14">
+            <div className="flex space-x-8">
+              {['home', 'about', 'projects', 'contact'].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => scrollToSection(section)}
+                  className={`px-4 py-2 font-medium rounded-lg transition-all duration-200 ease-in-out
+                    ${activeSection === section 
+                      ? 'bg-white text-emerald-600' 
+                      : 'text-white hover:bg-white/10'}`}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </nav>
-      <div className="pt-20">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
+  
+      <section id="about" className="min-h-screen">
+        <About />
+      </section>
+  
+      <section id="projects" className="min-h-screen">
+        <Projects/>
+      </section>
+  
+      <section id="contact" className="min-h-screen">
+        <Contact />
+      </section>
+    </div>
   );
 }
 
