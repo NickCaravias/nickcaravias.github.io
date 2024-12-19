@@ -1,9 +1,6 @@
 function About() {
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold mb-4">NICK CARAVIAS</h1>
-      <p className="text-lg mb-2"> nick.caravias@gmail.com | nick-caravias | NickCaravias</p>
-      
       <h2 className="text-2xl font-bold mt-6 mb-2">Education</h2>
       <p className="mb-2">Bucknell University</p>
       
