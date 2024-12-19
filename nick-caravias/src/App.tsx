@@ -8,8 +8,8 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <nav className="sticky top-0 w-full bg-green-700 p-5 shadow-lg flex justify-center">
-        <ul className="flex space-x-4">
+      <nav className="sticky top-0 w-full bg-green-700 p-5 shadow-lg">
+        <ul className="flex justify-center space-x-8">
           <li>
             <Link to="/" className="text-white font-bold text-lg hover:bg-gray-200 hover:text-black p-2 rounded">Home</Link>
           </li>
