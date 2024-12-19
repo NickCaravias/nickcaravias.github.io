@@ -5,8 +5,7 @@ function About() {
       <p className="text-lg mb-2"> nick.caravias@gmail.com | nick-caravias | NickCaravias</p>
       
       <h2 className="text-2xl font-bold mt-6 mb-2">Education</h2>
-      <p className="mb-2">Bucknell University bachelor’s degree in computer science 2022, minor in Economics</p>
-      <p className="mb-2">Student-athlete on the Men’s Crew team, Association for Computing Machinery member.</p>
+      <p className="mb-2">Bucknell University</p>
       
       <h2 className="text-2xl font-bold mt-6 mb-2">Professional Experience</h2>
       
