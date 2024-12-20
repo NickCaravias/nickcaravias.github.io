@@ -39,9 +39,38 @@ function Project({ title, description, technologies, githubUrl, demoUrl, image }
               </div>
             ))}
           </div>
-          {/* ...existing links code... */}
+          <div className="flex space-x-4">
+            {githubUrl && (
+              <a 
+                href={githubUrl} 
+                className="text-green-600 hover:text-green-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            )}
+            {demoUrl && (
+              <a 
+                href={demoUrl} 
+                className="text-green-600 hover:text-green-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PyPi page
+              </a>
+            )}
+          </div>
         </div>
-        {/* ...existing image code... */}
+        {image && (
+          <div className="flex-shrink-0 w-48">
+            <img 
+              src={image} 
+              alt={title}
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

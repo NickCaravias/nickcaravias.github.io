@@ -10,7 +10,7 @@ function Portfolio() {
   const projects = [
     {
       title: "PyHelmGen",
-      description: "Python library for generating Helm charts from docker-compose files. This package is used to abstract the complexity of Kubernetes Helm charts and provide a simple way to deploy applications to Kubernetes for web developers.",
+      description: "PyPi library for generating Helm charts from docker-compose files. This package is used to abstract the complexity of Kubernetes Helm charts and provide a simple way to deploy applications to Kubernetes for web developers.",
       technologies: [
         { icon: pythonIcon, name: "Python" },
         { icon: dockerIcon, name: "Docker" },
@@ -35,9 +35,9 @@ function Portfolio() {
   return (
     <>
       <div className="flex items-center justify-center min-h-[30vh] mb-4">
-        <h5 className="text-2xl text-center max-w-3xl">
-          Projects
-        </h5>
+      <h2 className="text-4xl font-bold text-center py-8 mb-12">
+        Portfolio 
+      </h2>
       </div>
       <div className="p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

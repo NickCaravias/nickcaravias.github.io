@@ -15,7 +15,9 @@ function About() {
     <div className="p-8">      
       <Introduction />
       
-      <h2 className="text-2xl font-bold mt-6 mb-2">Experience</h2>
+      <h2 className="text-4xl font-bold text-center py-8 mb-12">
+        Experience 
+      </h2>
       <div className="relative">
         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-green-200"></div>
         
