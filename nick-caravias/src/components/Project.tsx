@@ -8,11 +8,12 @@ interface ProjectProps {
   description: string;
   technologies: TechnologyIcon[];
   githubUrl?: string;
-  demoUrl?: string;
+  pypiUrl?: string;
   image?: string;
+  pageUrl?: string;
 }
 
-function Project({ title, description, technologies, githubUrl, demoUrl, image }: ProjectProps) {
+function Project({ title, description, technologies, githubUrl, pypiUrl, image, pageUrl }: ProjectProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="p-6 flex gap-6">
@@ -48,14 +49,24 @@ function Project({ title, description, technologies, githubUrl, demoUrl, image }
                 GitHub
               </a>
             )}
-            {demoUrl && (
+            {pypiUrl && (
               <a 
-                href={demoUrl} 
+                href={pypiUrl} 
                 className="text-green-600 hover:text-green-800"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 PyPi page
+              </a>
+            )}
+            {pageUrl && (
+              <a 
+                href={pageUrl} 
+                className="text-green-600 hover:text-green-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Page
               </a>
             )}
           </div>
