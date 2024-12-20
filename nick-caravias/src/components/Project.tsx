@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface TechnologyIcon {
   icon: string;
   name: string;
