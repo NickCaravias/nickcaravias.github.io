@@ -24,7 +24,7 @@ function Home() {
           Nick Caravias
         </h1>
         <h2 className="text-2xl font-content font-light mb-8">
-          Full Stack Software Engineer
+          Full-Stack Software Engineer
         </h2>
         
         <div className="flex space-x-6">
