@@ -5,6 +5,9 @@ import dockerIcon from '../assets/docker.svg';
 import kubernetesIcon from '../assets/k8s.webp';
 import rasperryPiIcon from '../assets/raspberry-pi.svg';
 import helmIcon from '../assets/helm.svg';
+import jupterIcon from '../assets/jupyter.svg';
+import bashIcon from '../assets/bash.png';
+
 
 function Portfolio() {
   const projects = [
@@ -17,7 +20,7 @@ function Portfolio() {
         { icon: helmIcon, name: "Helm" }
       ],
       githubUrl: "https://github.com/NickCaravias/py-helm-gen",
-      demoUrl: "https://pypi.org/project/pyhelmgen/"
+      pypiUrl: "https://pypi.org/project/pyhelmgen/"
     },
     {
       title: "Raspberry Pi Kubernetes cluster",
@@ -29,6 +32,17 @@ function Portfolio() {
         { icon: helmIcon, name: "Helm" }
       ],
       image: k3ClusterImage
+    },
+    {
+      title: "Project Twit Lit",
+      description: "I completed this during my research in undergraduate. I wrote Bash scrips to call Twitter’s developer API, aggregate and sort the data. Then I generated word cluster topics using Word2Vec and Latent Dirichlet Analysis. ",
+      technologies: [
+        { icon: pythonIcon, name: "Python" },
+        { icon: bashIcon, name: "Bash" },
+        { icon: jupterIcon, name: "Jupyter Notebook" }
+      ],
+      githubUrl: "https://github.com/NickCaravias/TwitLitSource",
+      pageUrl: "https://twitlit.github.io/blog.html"
     },
   ];
 
