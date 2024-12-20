@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import About from './components/About';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
@@ -42,7 +42,7 @@ function App() {
         <div className="px-4">
           <div className="flex justify-center items-center h-14">
             <div className="flex space-x-8">
-              {['home', 'about', 'portfolio', 'contact'].map((section) => (
+              {['home', 'experience', 'portfolio', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -59,8 +59,8 @@ function App() {
         </div>
       </nav>
   
-      <section id="about" className="min-h-screen">
-        <About />
+      <section id="experience" className="min-h-screen">
+        <Experience />
       </section>
   
       <section id="portfolio" className="min-h-screen">

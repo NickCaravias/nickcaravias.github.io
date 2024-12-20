@@ -2,7 +2,7 @@
 import Introduction from './Introduction';
 import Skills from './Skills';
 
-function About() {
+function Experience() {
   const jobSkills = {
     esteeLauder2023: ["JavaScript", "Node.js", "Python", "React", "Vue.js", "Azure", "Docker", "K8s", "MySQL", "Postgres"],
     quantumSi: ["Python", "PyTorch", "SQL", "Data Mining"],
@@ -78,4 +78,4 @@ function About() {
   );
 }
 
-export default About;
+export default Experience;
