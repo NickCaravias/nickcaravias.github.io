@@ -42,7 +42,7 @@ function App() {
         <div className="px-4">
           <div className="flex justify-center items-center h-14">
             <div className="flex space-x-8">
-              {['home', 'about', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'portfolio', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}

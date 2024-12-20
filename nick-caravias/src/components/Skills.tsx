@@ -1,20 +1,18 @@
+interface SkillsProps {
+  skills: string[];
+  compact?: boolean;
+}
 
+function Skills({ skills, compact = false }: SkillsProps) {
+  return (
+    <div className={`flex flex-wrap gap-2 ${compact ? 'mt-2' : 'grid grid-cols-2 md:grid-cols-4 gap-4'}`}>
+      {skills.map((skill) => (
+        <span key={skill} className="bg-green-200 text-black px-2 py-1 rounded text-sm shadow-md hover:shadow-lg transition-shadow duration-200">
+          {skill}
+        </span>
+      ))}
+    </div>
+  );
+}
 
-function Skills() {
-    return (
-      <>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <span className="bg-green-200 text-black p-2 rounded text-center">Python</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">JavaScript</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">React</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">TypeScript</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">Node.js</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">SQL</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">Git</span>
-            <span className="bg-green-200 text-black p-2 rounded text-center">AWS</span>
-        </div>
-      </>
-    );
-  }
-    
-    export default Skills;
+export default Skills;
