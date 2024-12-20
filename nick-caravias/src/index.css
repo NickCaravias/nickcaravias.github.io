@@ -1,9 +1,16 @@
+@import '@fontsource/libre-baskerville';
+@import '@fontsource/source-sans-pro';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Gothic', sans-serif;
+  }
+  
+  body {
+    font-family: 'PT Serif', serif;
+  }
 }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -63,8 +63,8 @@ function App() {
         <About />
       </section>
   
-      <section id="projects" className="min-h-screen">
-        <Projects/>
+      <section id="portfolio" className="min-h-screen">
+        <Portfolio/>
       </section>
   
       <section id="contact" className="min-h-screen">
