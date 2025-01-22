@@ -13,7 +13,7 @@ function Portfolio() {
   const projects = [
     {
       title: "PyHelmGen",
-      description: "PyPi library for generating Helm charts from docker-compose files. This package is used to abstract the complexity of Kubernetes Helm charts and provide a simple way to deploy applications to Kubernetes for web developers.",
+      description: "PyPi library for generating Helm charts from docker-compose files. This package is used to abstract the complexity of Kubernetes deployments and provide a simple way to get applications on Kubernetes for web developers.",
       technologies: [
         { icon: pythonIcon, name: "Python" },
         { icon: dockerIcon, name: "Docker" },
