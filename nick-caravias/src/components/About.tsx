@@ -4,6 +4,7 @@ import Skills from './Skills';
 
 function About() {
   const jobSkills = {
+    thoughtfulai: ["Python", "Selenium", "AI Agents", "RPA"],
     esteeLauder2023: ["JavaScript", "Node.js", "Python", "React", "Vue.js", "Azure", "Docker", "K8s", "MySQL", "Postgres"],
     quantumSi: ["Python", "PyTorch", "SQL", "Data Mining"],
     esteeLauder2021: ["PHP", "Laravel", "MySQL"],
@@ -22,6 +23,16 @@ function About() {
         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-green-200"></div>
         
         <div className="ml-8">
+          <div className="relative mb-8">
+            <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
+            <div className="absolute left-16 top-3 font-bold text-gray-600">2025</div>
+            <div className="mb-4 ml-32">
+              <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Thoughtful AI</h3>
+              <p>Forward Deployed Engineer </p>
+              <Skills skills={jobSkills.thoughtfulai} compact />
+            </div>
+          </div>
+          
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
             <div className="absolute left-16 top-3 font-bold text-gray-600">2022</div>
