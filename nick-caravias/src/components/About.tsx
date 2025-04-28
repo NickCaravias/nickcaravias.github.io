@@ -4,7 +4,7 @@ import Skills from './Skills';
 
 function About() {
   const jobSkills = {
-    thoughtfulai: ["Python", "Selenium", "AI Agents", "RPA"],
+    thoughtfulai: ["Python", "AI Agents", "RPA"],
     esteeLauder2023: ["JavaScript", "Node.js", "Python", "React", "Vue.js", "Azure", "Docker", "K8s", "MySQL", "Postgres"],
     quantumSi: ["Python", "PyTorch", "SQL", "Data Mining"],
     esteeLauder2021: ["PHP", "Laravel", "MySQL"],
