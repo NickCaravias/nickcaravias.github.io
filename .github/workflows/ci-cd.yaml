@@ -18,11 +18,14 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: './nick-caravias/package.json'
 
       - name: Install dependencies
+        working-directory: ./nick-caravias
         run: npm ci
 
       - name: Build
+        working-directory: ./nick-caravias
         run: npm run build
 
       - name: Configure Git
@@ -31,6 +34,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
       - name: Deploy to GitHub Pages
+        working-directory: ./nick-caravias
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
