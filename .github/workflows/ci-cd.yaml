@@ -32,6 +32,11 @@ jobs:
         working-directory: ./nick-caravias
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         working-directory: ./nick-caravias
         env:
