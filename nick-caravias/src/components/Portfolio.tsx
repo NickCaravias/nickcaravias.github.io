@@ -7,6 +7,10 @@ import rasperryPiIcon from '../assets/raspberry-pi.svg';
 import helmIcon from '../assets/helm.svg';
 import jupterIcon from '../assets/jupyter.svg';
 import bashIcon from '../assets/bash.png';
+import azureIcon from '../assets/azure.png';
+import mysqlIcon from '../assets/mysqlIcon.png';
+import laravelIcon from '../assets/laravelIcon.png';
+import javascriptIcon from '../assets/jsIcon.webp';
 
 
 function Portfolio() {
@@ -35,7 +39,7 @@ function Portfolio() {
     },
     {
       title: "Project Twit Lit",
-      description: "I completed this during my research in undergraduate. I wrote Bash scrips to call Twitter’s developer API, aggregate and sort the data. Then I generated word cluster topics using Word2Vec and Latent Dirichlet Analysis. ",
+      description: "I completed this during my research in undergraduate. I wrote Bash scrips to call Twitter’s developer API, aggregate and sort the data. Then I generated word cluster topics using Word2Vec and Latent Dirichlet Analysis.",
       technologies: [
         { icon: pythonIcon, name: "Python" },
         { icon: bashIcon, name: "Bash" },
@@ -43,6 +47,18 @@ function Portfolio() {
       ],
       githubUrl: "https://github.com/NickCaravias/TwitLitSource",
       pageUrl: "https://twitlit.github.io/blog.html"
+    },
+    {
+      title: "Tech Day of Pink",
+      description: "I built and maintain two web applications for Tech Day of Pink: an informational website using vanilla JavaScript on Apache/Ubuntu, and a real-time silent auction platform using React/Laravel with MySQL running on AKS. I led full-stack development including system design, Kubernetes deployment, and CI/CD implementation.",
+      technologies: [
+        { icon: javascriptIcon, name: "JavaScript" },
+        { icon: mysqlIcon, name: "MySQL" },
+        { icon: laravelIcon, name: "Laravel" },
+        { icon: kubernetesIcon, name: "Kubernetes" },
+        { icon: azureIcon, name: "Azure cloud" }
+      ],
+      pageUrl: "https://www.techdayofpink.com/"
     },
   ];
 
