@@ -10,3 +10,10 @@ This is my personal portfolio website built with React.js, TypeScript, and Tailw
 cd nick-caravias
 npm install
 npm run dev
+```
+
+## Before committing
+```
+cd nick-caravias
+npm run format
+```
