@@ -7,23 +7,19 @@ function Contact() {
       <h2 className="text-2xl text-center max-w-3xl mb-8 font-headers">
         Please feel free to email me or contribute to one of my open source repositories
       </h2>
-      
+
       <div className="flex gap-8">
-        <a 
+        <a
           href="mailto:nick.caravias@gmail.com"
           className="transform transition-transform hover:scale-110"
           aria-label="Email"
         >
           <div className="w-16 h-16 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex items-center justify-center">
-            <img 
-              src={emailIcon} 
-              alt="Email"
-              className="w-12 h-12"
-            />
+            <img src={emailIcon} alt="Email" className="w-12 h-12" />
           </div>
         </a>
 
-        <a 
+        <a
           href="https://github.com/NickCaravias"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,11 +27,7 @@ function Contact() {
           aria-label="GitHub"
         >
           <div className="w-16 h-16 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex items-center justify-center">
-            <img 
-              src={githubIcon} 
-              alt="GitHub"
-              className="w-12 h-12"
-            />
+            <img src={githubIcon} alt="GitHub" className="w-12 h-12" />
           </div>
         </a>
       </div>

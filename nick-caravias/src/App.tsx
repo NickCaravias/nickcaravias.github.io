@@ -35,10 +35,12 @@ function App() {
       <section id="home" className="min-h-screen">
         <Home />
       </section>
-  
-      <nav className="sticky top-4 mx-auto w-[600px] 
+
+      <nav
+        className="sticky top-4 mx-auto w-[600px] 
                       bg-gradient-to-r from-green-400 to-emerald-500 
-                      rounded-full shadow-lg z-50">
+                      rounded-full shadow-lg z-50"
+      >
         <div className="px-4">
           <div className="flex justify-center items-center h-14">
             <div className="flex space-x-8">
@@ -47,9 +49,11 @@ function App() {
                   key={section}
                   onClick={() => scrollToSection(section)}
                   className={`px-4 py-2 font-medium rounded-lg transition-all duration-200 ease-in-out
-                    ${activeSection === section 
-                      ? 'bg-white text-emerald-600' 
-                      : 'text-white hover:bg-white/10'}`}
+                    ${
+                      activeSection === section
+                        ? 'bg-white text-emerald-600'
+                        : 'text-white hover:bg-white/10'
+                    }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -58,15 +62,15 @@ function App() {
           </div>
         </div>
       </nav>
-  
+
       <section id="about" className="min-h-screen">
         <About />
       </section>
-  
+
       <section id="portfolio" className="min-h-screen">
-        <Portfolio/>
+        <Portfolio />
       </section>
-  
+
       <section id="contact" className="min-h-screen">
         <Contact />
       </section>
