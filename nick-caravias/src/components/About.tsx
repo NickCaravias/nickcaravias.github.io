@@ -4,7 +4,7 @@ import Skills from './Skills';
 
 function About() {
   const jobSkills = {
-    thoughtfulai: ["Python", "AI Agents", "RPA"],
+    thoughtfulai: ["Python", "AI Agents", "Agent Skills", "RPA", "Fast API", "Temporal", "OpenTelemetry", "AWS", "K8s", "Knative", "Redis"],
     esteeLauder2023: ["JavaScript", "Node.js", "Python", "React", "Vue.js", "Azure", "Docker", "K8s", "MySQL", "Postgres"],
     quantumSi: ["Python", "PyTorch", "SQL", "Data Mining"],
     esteeLauder2021: ["PHP", "Laravel", "MySQL"],
@@ -25,18 +25,18 @@ function About() {
         <div className="ml-8">
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2025</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Feb 2025</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Thoughtful AI</h3>
-              <p>Forward Deployed Engineer </p>
+              <p>Forward Deployed Software Engineer </p>
               <Skills skills={jobSkills.thoughtfulai} compact />
             </div>
           </div>
           
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2022</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Jun 2022</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Estee Lauder Companies</h3>
               <p>Software Engineer – Senior Analyst </p>
               <p>Developer – Analyst </p>
@@ -46,18 +46,18 @@ function About() {
 
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2021</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Dec 2021</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Quantum-Si</h3>
-              <p>Data Modeling, Mining, Prediction Intern </p>
+              <p>Data Modeling, Mining, Prediction Co-op</p>
               <Skills skills={jobSkills.quantumSi} compact />
             </div>
           </div>
 
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2021</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Jun 2021</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Estee Lauder Companies</h3>
               <p>Software Engineering Intern </p>
               <Skills skills={jobSkills.esteeLauder2021} compact />
@@ -66,18 +66,18 @@ function About() {
 
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2020</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Dec 2020</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Upside Foods (previously Memphis Meats)</h3>
-              <p>Software Engineering Intern</p>
+              <p>Software Engineering Co-op</p>
               <Skills skills={jobSkills.upsideFoods} compact />
             </div>
           </div>
 
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
-            <div className="absolute left-16 top-3 font-bold text-gray-600">2020</div>
-            <div className="mb-4 ml-32">
+            <div className="absolute left-16 top-3 font-bold text-gray-600">Sept 2020</div>
+            <div className="mb-4 ml-36">
               <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">Project Twitter Literature</h3>
               <p>Student Researcher</p>
               <Skills skills={jobSkills.twitterLiterature} compact />
