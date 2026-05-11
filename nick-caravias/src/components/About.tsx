@@ -4,6 +4,16 @@ import Skills from './Skills';
 
 function About() {
   const jobSkills = {
+    growthprotocol: [
+      'Python',
+      'Neuro-symbolic AI',
+      'Fast API',
+      'Postgres',
+      'GCP',
+      'K8s',
+      'Helm',
+      'Snowflake',
+    ],
     thoughtfulai: [
       'Python',
       'AI Agents',
@@ -44,6 +54,18 @@ function About() {
         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-green-200"></div>
 
         <div className="ml-8">
+          <div className="relative mb-8">
+            <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
+            <div className="absolute left-16 top-3 font-bold text-gray-600">May 2026</div>
+            <div className="mb-4 ml-36">
+              <h3 className="text-xl font-bold bg-green-200 p-2 rounded shadow-md">
+                EY Growth Protocol
+              </h3>
+              <p>Forward Deployed Software Engineer </p>
+              <Skills skills={jobSkills.growthprotocol} compact />
+            </div>
+          </div>
+
           <div className="relative mb-8">
             <div className="absolute left-4 top-6 w-8 h-0.5 bg-green-200"></div>
             <div className="absolute left-16 top-3 font-bold text-gray-600">Feb 2025</div>
